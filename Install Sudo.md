@@ -28,9 +28,10 @@ Now add your name to /etc/sudoers file
 
 - Below that line type in the following...
     
-    yourusernamehere  ALL=(ALL:ALL) ALL
+    yourusername  ALL=(ALL:ALL) ALL
 
-"Ctrl+o" save, "Ctrl+x" exit, then press "y" and then press [enter] to exit and save the file
+
+-"Ctrl+o" save, "Ctrl+x" exit, then press "y" and then press [enter] to exit and save the file
 
 Now we exit out of the Terminal completely - Type in the following command... exit - then press [enter] - Type exit again... exit - then press [enter] - That should have closed the Terminal application
 
