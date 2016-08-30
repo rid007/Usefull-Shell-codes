@@ -1,16 +1,20 @@
-Install sudo in Debian 8 Jessie
+## Install sudo in Debian 8 Jessie
 
-Debian seems to not have sudo installed by default.
+###Debian seems to not have sudo installed by default.
 Here is how to install sudo and add your username to the sudoers file.
 
 Open the Terminal Click "Activities" Click in the "Type to search..." box Type in "Terminal" and press the [enter] key
 
-Switch to root user Type in the Terminal the following command su root@debian:/home/yourusernamehere#
-Install "sudo"
+Switch to root user Type in the Terminal the following command 
+        su root@debian:/home/yourusernamehere#
+
+##Install "sudo"
 
 Now that you are root user within the Terminal lets install "sudo"
 Type in the following command...
-apt-get install sudo
+
+        apt-get update
+        apt-get install sudo
 
 Add your username to the sudo group
 
@@ -21,9 +25,12 @@ Now add your name to /etc/sudoers file
     nano /etc/sudoers
 
 - Scroll down and look for the line "%sudo  ALL=(ALL:ALL) ALL"
+
 - Below that line type in the following...
+    
     yourusernamehere  ALL=(ALL:ALL) ALL
-- ""Ctrl+o" save, "Ctrl+x" exit, then press "y" and then press [enter] to exit and save the file
+
+"Ctrl+o" save, "Ctrl+x" exit, then press "y" and then press [enter] to exit and save the file
 
 Now we exit out of the Terminal completely - Type in the following command... exit - then press [enter] - Type exit again... exit - then press [enter] - That should have closed the Terminal application
 
