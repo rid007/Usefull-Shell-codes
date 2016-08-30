@@ -1,0 +1,4 @@
+For Apt-get like Debian or Ubuntu
+
+sudo apt-get update && sudo apt-get upgrade \ # that backslah means it's wait for a next commands
+sudo apt-get autoremove && sudo apt-get autoclean
